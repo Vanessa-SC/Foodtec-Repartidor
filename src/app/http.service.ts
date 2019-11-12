@@ -7,7 +7,7 @@ import { Storage } from '@ionic/storage';
 })
 export class HttpService {
 
-  idUsuario:string;
+  idRepartidor:string;
 
 
   //httpConexion = "https://itd-foodtec.000webhostapp.com/foodtec/";
@@ -16,7 +16,7 @@ export class HttpService {
 
   }
 
-  login( contra:string, correo:string){
+  loginR( contra:string, correo:string){
    
     var url = this.httpConexion + 'loginR/'+correo+'/'+contra;
     return new Promise((resolve, reject) => {
